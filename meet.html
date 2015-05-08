@@ -8,7 +8,7 @@
 	<body>
 		<script src="assets/js/nunjucks.min.js"></script>		
 		<script>
-		var env = new nunjucks.Environment(new nunjucks.WebLoader());
+		var env = new nunjucks.configure('/magda-health', {});
 		var res = nunjucks.render('meet-src.html');
 		var newDoc = document.open("text/html", "replace");
 		newDoc.write(res);
