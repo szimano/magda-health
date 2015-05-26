@@ -94,6 +94,13 @@ module.exports = function(grunt) {
 	  }
     },
 
+	'gh-pages': {
+	    options: {
+	      base: 'dist'
+	    },
+	    src: ['**']
+	  },
+	  
     // Before generating any new files,
     // remove any previously-created files.
     clean: ['<%= config.dist %>/**/*.{html,xml}']
